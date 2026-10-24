@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Krishna Sales — Smart Shopping</title>
+  <meta name="description" content="Krishna Sales - Smart products, better prices and easy WhatsApp ordering.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="noise"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+
+    <div class="nav-left">
+      <a href="#home" class="brand">
+        <span class="brand-mark">
+          <span></span>
+          <span></span>
+        </span>
+
+        <span>
+          <strong>KRISHNA</strong>
+          <small>SALES</small>
+        </span>
+      </a>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#deals">Deals</a>
+      <a href="#smart-tools">Smart Tools</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <span>⌕</span>
+      </button>
+
+      <button class="icon-btn wishlist-nav" id="wishlistBtn" aria-label="Wishlist">
+        ♡
+        <b id="wishlistCount">0</b>
+      </button>
+
+      <button class="cart-button" id="cartBtn">
+        <span>Cart</span>
+        <b id="cartCount">0</b>
+      </button>
+
+      <button class="mobile-menu" id="mobileMenuBtn">
+        ☰
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#deals">Deals</a>
+    <a href="#smart-tools">Smart Tools</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="home">
+
+      <div class="hero-grid">
+
+        <div class="hero-content reveal">
+
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            SMART RETAIL • 2026
+          </div>
+
+          <h1>
+            BUY SMART.
+            <span>SPEND BETTER.</span>
+          </h1>
+
+          <p>
+            A cleaner way to discover useful products, compare prices,
+            unlock deals and order directly from Krishna Sales.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#products" class="primary-btn">
+              Explore Store
+              <span>↗</span>
+            </a>
+
+            <button class="secondary-btn" id="whatsappHero">
+              WhatsApp Us
+              <span>→</span>
+            </button>
+
+          </div>
+
+          <div class="hero-stats">
+
+            <div>
+              <strong data-count="120">0</strong>
+              <span>Products</span>
+            </div>
+
+            <div>
+              <strong data-count="98">0</strong>
+              <span>% Satisfaction</span>
+            </div>
+
+            <div>
+              <strong data-count="24">0</strong>
+              <span>Hour Support</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Hero visual -->
+        <div class="hero-visual reveal">
+
+          <div class="orbit-system">
+
+            <div class="orbit orbit-a"></div>
+            <div class="orbit orbit-b"></div>
+            <div class="orbit orbit-c"></div>
+
+            <div class="orbit-dot dot-one"></div>
+            <div class="orbit-dot dot-two"></div>
+            <div class="orbit-dot dot-three"></div>
+
+            <div class="core-product">
+
+              <div class="core-top">
+                <span>KS</span>
+                <small>SMART STORE</small>
+              </div>
+
+              <div class="core-icon">✦</div>
+
+              <div class="core-bottom">
+                <strong>NEW<br>DROP</strong>
+                <span>DISCOVER →</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="floating-card card-price">
+            <small>BEST VALUE</small>
+            <strong>₹499</strong>
+            <span>from today</span>
+          </div>
+
+          <div class="floating-card card-live">
+            <span class="live-indicator"></span>
+            <div>
+              <strong>LIVE DEAL</strong>
+              <small>Offer ending soon</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-bottom-line">
+        <span>FAST RESPONSE</span>
+        <span>LOCAL SERVICE</span>
+        <span>WHATSAPP ORDER</span>
+        <span>SMART DEALS</span>
+      </div>
+
+    </section>
+
+
+    <!-- QUICK DISCOVERY -->
+    <section class="discovery section">
+
+      <div class="section-heading reveal">
+        <div>
+          <span class="mini-label">01 / DISCOVER</span>
+          <h2>What are you<br><em>looking for?</em></h2>
+        </div>
+
+        <p>
+          Find something useful without wasting time.
+          Search, filter and compare everything from one place.
+        </p>
+      </div>
+
+      <div class="category-grid reveal">
+
+        <button class="category-card active" data-category="all">
+          <span class="category-number">01</span>
+          <strong>All Products</strong>
+          <small>Explore everything</small>
+          <i>↗</i>
+        </button>
+
+        <button class="category-card" data-category="electronics">
+          <span class="category-number">02</span>
+          <strong>Electronics</strong>
+          <small>Smart everyday tech</small>
+          <i>↗</i>
+        </button>
+
+        <button class="category-card" data-category="home">
+          <span class="category-number">03</span>
+          <strong>Home</strong>
+          <small>Useful home products</small>
+          <i>↗</i>
+        </button>
+
+        <button class="category-card" data-category="accessories">
+          <span class="category-number">04</span>
+          <strong>Accessories</strong>
+          <small>Small things, big use</small>
+          <i>↗</i>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products section" id="products">
+
+      <div class="section-heading product-heading reveal">
+
+        <div>
+          <span class="mini-label">02 / COLLECTION</span>
+          <h2>Selected <em>products.</em></h2>
+        </div>
+
+        <div class="product-controls">
+
+          <div class="search-box">
+            <span>⌕</span>
+            <input
+              type="text"
+              id="productSearch"
+              placeholder="Search products..."
+            >
+          </div>
+
+          <select id="sortProducts">
+            <option value="default">Sort: Featured</option>
+            <option value="low">Price: Low → High</option>
+            <option value="high">Price: High → Low</option>
+            <option value="rating">Top Rated</option>
+          </select>
+
+        </div>
+
+      </div>
+
+      <div class="filter-row reveal">
+
+        <button class="filter-chip active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter-chip" data-filter="electronics">
+          Electronics
+        </button>
+
+        <button class="filter-chip" data-filter="home">
+          Home
+        </button>
+
+        <button class="filter-chip" data-filter="accessories">
+          Accessories
+        </button>
+
+        <button class="filter-chip" data-filter="under500">
+          Under ₹500
+        </button>
+
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+
+      <div class="empty-products" id="emptyProducts">
+        <span>⌁</span>
+        <h3>No products found</h3>
+        <p>Try another search or category.</p>
+      </div>
+
+    </section>
+
+
+    <!-- DEAL -->
+    <section class="deal-section section" id="deals">
+
+      <div class="deal-panel reveal">
+
+        <div class="deal-copy">
+
+          <span class="mini-label">03 / TODAY'S DROP</span>
+
+          <h2>
+            One deal.<br>
+            <em>Limited time.</em>
+          </h2>
+
+          <p>
+            Grab today's selected offer before the timer reaches zero.
+          </p>
+
+          <div class="countdown" id="countdown">
+
+            <div>
+              <strong id="days">00</strong>
+              <span>Days</span>
+            </div>
+
+            <i>:</i>
+
+            <div>
+              <strong id="hours">00</strong>
+              <span>Hours</span>
+            </div>
+
+            <i>:</i>
+
+            <div>
+              <strong id="minutes">00</strong>
+              <span>Min</span>
+            </div>
+
+            <i>:</i>
+
+            <div>
+              <strong id="seconds">00</strong>
+              <span>Sec</span>
+            </div>
+
+          </div>
+
+          <button class="primary-btn" id="dealBtn">
+            Grab Today's Deal →
+          </button>
+
+        </div>
+
+        <div class="deal-object">
+
+          <div class="deal-glow"></div>
+
+          <div class="deal-device">
+
+            <div class="device-camera"></div>
+            <div class="device-screen">
+              <span>KS</span>
+              <small>DEAL</small>
+            </div>
+
+          </div>
+
+          <div class="deal-price">
+            <small>SPECIAL</small>
+            <strong>₹799</strong>
+            <del>₹1,299</del>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SMART TOOLS -->
+    <section class="smart-tools section" id="smart-tools">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="mini-label">04 / SMART TOOLS</span>
+          <h2>More than<br><em>shopping.</em></h2>
+        </div>
+
+        <p>
+          Small tools designed to make your buying decision easier.
+        </p>
+
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- Calculator -->
+        <div class="tool-card calculator reveal">
+
+          <div class="tool-head">
+            <div>
+              <span class="tool-icon">₹</span>
+              <h3>Price Calculator</h3>
+            </div>
+            <span class="tool-number">01</span>
+          </div>
+
+          <label>Product price</label>
+          <input type="number" id="calcPrice" value="1000">
+
+          <label>Quantity</label>
+          <input type="number" id="calcQty" value="1" min="1">
+
+          <div class="calc-result">
+            <span>Total</span>
+            <strong id="calcTotal">₹1,000</strong>
+          </div>
+
+        </div>
+
+
+        <!-- Coupon -->
+        <div class="tool-card coupon-tool reveal">
+
+          <div class="tool-head">
+            <div>
+              <span class="tool-icon">%</span>
+              <h3>Deal Finder</h3>
+            </div>
+            <span class="tool-number">02</span>
+          </div>
+
+          <p>
+            Have a coupon? Test it here before checkout.
+          </p>
+
+          <div class="coupon-input">
+            <input
+              type="text"
+              id="couponInput"
+              placeholder="Enter coupon"
+            >
+            <button id="applyCoupon">Apply</button>
+          </div>
+
+          <div id="couponMessage" class="coupon-message"></div>
+
+          <div class="coupon-examples">
+            <button data-coupon="KS10">KS10</button>
+            <button data-coupon="WELCOME">WELCOME</button>
+            <button data-coupon="FIRST20">FIRST20</button>
+          </div>
+
+        </div>
+
+
+        <!-- Tracking -->
+        <div class="tool-card tracking-tool reveal">
+
+          <div class="tool-head">
+            <div>
+              <span class="tool-icon">⌁</span>
+              <h3>Order Tracking</h3>
+            </div>
+            <span class="tool-number">03</span>
+          </div>
+
+          <p>
+            Check your latest locally saved order.
+          </p>
+
+          <div class="tracking-box" id="trackingBox">
+            <span>No recent order</span>
+            <strong>—</strong>
+          </div>
+
+          <button class="outline-btn" id="viewOrders">
+            View Orders →
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+    <section class="why section">
+
+      <div class="why-visual reveal">
+
+        <div class="vertical-text">
+          KRISHNA SALES • SMART RETAIL • KRISHNA SALES • SMART RETAIL
+        </div>
+
+        <div class="why-center">
+          <span>KS</span>
+          <strong>BUY<br>BETTER.</strong>
+        </div>
+
+      </div>
+
+      <div class="why-content reveal">
+
+        <span class="mini-label">05 / WHY US</span>
+
+        <h2>
+          Simple shopping.<br>
+          <em>Less confusion.</em>
+        </h2>
+
+        <p>
+          We believe buying something should feel simple.
+          That's why this store focuses on useful products,
+          transparent pricing and direct communication.
+        </p>
+
+        <div class="feature-list">
+
+          <div>
+            <span>01</span>
+            <div>
+              <strong>Direct ordering</strong>
+              <small>Talk directly through WhatsApp.</small>
+            </div>
+          </div>
+
+          <div>
+            <span>02</span>
+            <div>
+              <strong>Clear pricing</strong>
+              <small>No confusing checkout screens.</small>
+            </div>
+          </div>
+
+          <div>
+            <span>03</span>
+            <div>
+              <strong>Local support</strong>
+              <small>Fast human response when needed.</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="reviews section">
+
+      <div class="section-heading reveal">
+
+        <div>
+          <span class="mini-label">06 / PEOPLE</span>
+          <h2>What people<br><em>say.</em></h2>
+        </div>
+
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Very simple ordering process. I found the product,
+            sent the message and got a quick response."
+          </p>
+          <div class="review-user">
+            <span>AK</span>
+            <div>
+              <strong>Arjun Kumar</strong>
+              <small>Verified customer</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            "The price comparison and deal section makes it
+            much easier to decide what to buy."
+          </p>
+          <div class="review-user">
+            <span>RS</span>
+            <div>
+              <strong>Riya Singh</strong>
+              <small>Verified customer</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Clean website, fast WhatsApp communication and
+            no unnecessary complicated checkout."
+          </p>
+          <div class="review-user">
+            <span>VK</span>
+            <div>
+              <strong>Vikas Kumar</strong>
+              <small>Verified customer</small>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div class="contact-panel reveal">
+
+        <div>
+          <span class="mini-label">07 / CONTACT</span>
+
+          <h2>
+            Need something?<br>
+            <em>Let's talk.</em>
+          </h2>
+
+          <p>
+            For product availability, bulk orders,
+            custom requirements or any question,
+            contact Krishna Sales directly.
+          </p>
+
+          <div class="contact-actions">
+
+            <a
+              href="https://wa.me/919151110219"
+              target="_blank"
+              class="primary-btn"
+            >
+              WhatsApp
+              <span>↗</span>
+            </a>
+
+            <a
+              href="tel:+919151110219"
+              class="secondary-btn"
+            >
+              Call Now
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="contact-info">
+
+          <div>
+            <small>PHONE</small>
+            <strong>+91 91511 10219</strong>
+          </div>
+
+          <div>
+            <small>ORDER METHOD</small>
+            <strong>WhatsApp Direct</strong>
+          </div>
+
+          <div>
+            <small>SUPPORT</small>
+            <strong>Fast Response</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark">
+            <span></span>
+            <span></span>
+          </span>
+
+          <span>
+            <strong>KRISHNA</strong>
+            <small>SALES</small>
+          </span>
+        </a>
+
+        <p>
+          Smart products.<br>
+          Better decisions.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
+        <a href="#smart-tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-note">
+        <span>MADE FOR SMART SHOPPING</span>
+        <strong>2026 © KRISHNA SALES</strong>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>FRONTEND DEMO • LOCAL STORAGE ENABLED</span>
+      <span>BUILT WITH HTML • CSS • JAVASCRIPT</span>
+    </div>
+
+  </footer>
+
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+
+    <div class="drawer-head">
+      <div>
+        <span class="mini-label">YOUR BAG</span>
+        <h3>Shopping Cart</h3>
+      </div>
+
+      <button class="close-btn" id="closeCart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <span>◌</span>
+      <strong>Your cart is empty</strong>
+      <p>Add something you like.</p>
+    </div>
+
+    <div class="cart-summary">
+
+      <div>
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+
+      <div>
+        <span>Discount</span>
+        <strong id="cartDiscount">₹0</strong>
+      </div>
+
+      <div class="summary-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        Order on WhatsApp →
+      </button>
+
+      <button class="clear-btn" id="clearCart">
+        Clear cart
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal-wrap" id="productModal">
+
+    <div class="product-modal">
+
+      <button class="modal-close" id="closeProductModal">×</button>
+
+      <div class="modal-product-visual" id="modalProductVisual">
+        ✦
+      </div>
+
+      <div class="modal-product-info">
+
+        <span class="mini-label" id="modalCategory">
+          PRODUCT
+        </span>
+
+        <h2 id="modalTitle">Product</h2>
+
+        <p id="modalDescription">
+          Product description.
+        </p>
+
+        <div class="modal-rating">
+          ★★★★★
+          <span id="modalRating">4.8</span>
+        </div>
+
+        <div class="modal-price">
+          <strong id="modalPrice">₹0</strong>
+          <del id="modalOldPrice"></del>
+        </div>
+
+        <div class="modal-actions">
+
+          <button class="primary-btn" id="modalAddCart">
+            Add to Cart
+          </button>
+
+          <button class="secondary-btn" id="modalBuyNow">
+            Buy Now
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ORDERS MODAL -->
+  <div class="modal-wrap" id="ordersModal">
+
+    <div class="orders-modal">
+
+      <button class="modal-close" id="closeOrdersModal">×</button>
+
+      <span class="mini-label">LOCAL HISTORY</span>
+
+      <h2>Your Orders</h2>
+
+      <div id="ordersList"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span>✓</span>
+    <p>Done</p>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
